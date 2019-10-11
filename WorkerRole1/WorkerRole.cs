@@ -38,7 +38,7 @@ namespace WorkerRole1
         public override bool OnStart()
         {
             // Set the maximum number of concurrent connections
-            ServicePointManager.DefaultConnectionLimit = 12;
+            ServicePointManager.DefaultConnectionLimit = 1000;
 
             // For information on handling configuration changes
             // see the MSDN topic at https://go.microsoft.com/fwlink/?LinkId=166357.
@@ -46,11 +46,6 @@ namespace WorkerRole1
             bool result = base.OnStart();
 
             Trace.TraceInformation("WorkerRole1 has been started");
-
-            // Set the TcpListener on port 25.
-            
-            // IPAddress localAddr = IPAddress.Parse("127.0.0.1");
-            // TcpListener server = new TcpListener(port);
 
             localAddr = RoleEnvironment.CurrentRoleInstance.InstanceEndpoints["Endpoint1"].IPEndpoint.Address;
             server = new TcpListener(localAddr, port);
@@ -80,7 +75,7 @@ namespace WorkerRole1
             {
                
 
-                // Buffer for reading data
+              
                 
 
                 // Enter the listening loop.
@@ -88,8 +83,7 @@ namespace WorkerRole1
                 {
                     Trace.WriteLine("Waiting for a connection... ");
 
-                    // Perform a blocking call to accept requests.
-                    // You could also user server.AcceptSocket() here.
+                   
                     client = server.AcceptTcpClient();
                     ThreadPool.QueueUserWorkItem(ThreadProc, client);
 
