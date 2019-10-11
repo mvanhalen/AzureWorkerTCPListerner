@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29403.142
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "AzureCloudService1", "AzureCloudService1\AzureCloudService1.ccproj", "{16106724-2BD0-4938-B152-5443309C39B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerRole1", "WorkerRole1\WorkerRole1.csproj", "{95E2D9CF-94C8-40C3-82C6-1053C6DB5B66}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16106724-2BD0-4938-B152-5443309C39B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16106724-2BD0-4938-B152-5443309C39B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16106724-2BD0-4938-B152-5443309C39B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16106724-2BD0-4938-B152-5443309C39B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95E2D9CF-94C8-40C3-82C6-1053C6DB5B66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95E2D9CF-94C8-40C3-82C6-1053C6DB5B66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95E2D9CF-94C8-40C3-82C6-1053C6DB5B66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95E2D9CF-94C8-40C3-82C6-1053C6DB5B66}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FC3C6200-9CB8-439A-893C-EE5A8BA6D96F}
+	EndGlobalSection
+EndGlobal
